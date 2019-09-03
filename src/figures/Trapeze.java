@@ -1,4 +1,6 @@
-import interfaces.ITrapeze;
+package figures;
+
+import figures.interfaces.ITrapeze;
 
 public class Trapeze implements ITrapeze {
 
@@ -7,8 +9,8 @@ public class Trapeze implements ITrapeze {
     private final double heightTrapeze;
     private final String colorTrapeze;
 
-    Trapeze(double downSideTrapeze, double upperSideTrapeze,
-            double heightTrapeze, String colorTrapeze){
+    public Trapeze(double downSideTrapeze, double upperSideTrapeze,
+                   double heightTrapeze, String colorTrapeze){
         this.downSideTrapeze = downSideTrapeze;
         this.upperSideTrapeze = upperSideTrapeze;
         this.heightTrapeze = heightTrapeze;
@@ -36,6 +38,6 @@ public class Trapeze implements ITrapeze {
 
     @Override
     public String paintFigure() {
-        return "The Trapeze is drawn";
+        return "The trapeze is drawn";
     }
 }

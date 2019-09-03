@@ -1,4 +1,6 @@
-import interfaces.ICircle;
+package figures;
+
+import figures.interfaces.ICircle;
 
 public class Circle implements ICircle {
 
@@ -6,7 +8,7 @@ public class Circle implements ICircle {
     private final String colorCircle;
     private final static double PI = 3.14;
 
-    Circle(double radiusCircle, String colorCircle){
+    public Circle(double radiusCircle, String colorCircle){
         this.radiusCircle = radiusCircle;
         this.colorCircle = colorCircle;
     }
@@ -28,6 +30,6 @@ public class Circle implements ICircle {
 
     @Override
     public String paintFigure() {
-        return "The Circle is drawn";
+        return "The circle is drawn";
     }
 }

@@ -1,4 +1,8 @@
-import interfaces.IFigure;
+import figures.Circle;
+import figures.Square;
+import figures.Trapeze;
+import figures.Triangle;
+import figures.interfaces.IFigure;
 import java.util.Random;
 
 class FiguresManager {

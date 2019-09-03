@@ -1,4 +1,6 @@
-import interfaces.ITriangle;
+package figures;
+
+import figures.interfaces.ITriangle;
 
 public class Triangle implements ITriangle {
 
@@ -8,8 +10,8 @@ public class Triangle implements ITriangle {
     private final String colorTriangle;
 
 
-    Triangle(double firstSideTriangle, double secondSideTriangle,
-             double thirdSideTriangle, String colorTriangle){
+    public Triangle(double firstSideTriangle, double secondSideTriangle,
+                    double thirdSideTriangle, String colorTriangle){
         this.firstSideTriangle = firstSideTriangle;
         this.secondSideTriangle = secondSideTriangle;
         this.thirdSideTriangle = thirdSideTriangle;
@@ -39,6 +41,6 @@ public class Triangle implements ITriangle {
 
     @Override
     public String paintFigure() {
-        return "The Triangle is drawn";
+        return "The triangle is drawn";
     }
 }

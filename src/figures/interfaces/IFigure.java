@@ -1,4 +1,4 @@
-package interfaces;
+package figures.interfaces;
 
 public interface IFigure {
     String getColor();

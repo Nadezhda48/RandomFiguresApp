@@ -1,11 +1,13 @@
-import interfaces.ISquare;
+package figures;
+
+import figures.interfaces.ISquare;
 
 public class Square implements ISquare {
 
     private final double sideSquare;
     private final String colorSquare;
 
-    Square(double sideSquare, String colorSquare){
+    public Square(double sideSquare, String colorSquare){
         this.sideSquare = sideSquare;
         this.colorSquare = colorSquare;
     }
@@ -27,6 +29,6 @@ public class Square implements ISquare {
 
     @Override
     public String paintFigure() {
-        return "The Square is drawn";
+        return "The square is drawn";
     }
 }
